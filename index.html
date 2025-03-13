@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task List</title>
-    <link rel="stylesheet" href="index.css"> <!-- Optional CSS File -->
-    <script defer src="index.js"></script> <!-- Link External JavaScript -->
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
 
-    <form id="todo">
-        <div class="flex-container">
-            <div>Enter the task: <input type="text" id="task" /></div>
-            <div>Enter the description: <input type="text" id="task_des" /></div>
-            <div>Enter the time: <input type="time" id="task_time" /></div>
-            <div>Enter the date: <input type="date" id="date" /></div>
-            <button id="submit" type="submit">Submit</button>
-        </div>
-    </form>
+    <div class="container">
+        <h1>To-Do List</h1>
 
-    <table id="show">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Task</th>
-                <th>Description</th>
-                <th>Time</th>
-                <th>Date</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+        <form id="todo">
+            <div class="task-input">
+                <input type="text" id="task" placeholder="Enter task" required>
+                <input type="text" id="task_des" placeholder="Enter description">
+                <input type="time" id="task_time">
+                <input type="date" id="date">
+                <button id="submit" type="submit">Add Task</button>
+            </div>
+        </form>
+
+        <div class="task-container">
+            <table id="show">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task</th>
+                        <th>Description</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                        
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
 
 </body>
 </html>
