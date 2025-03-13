@@ -2,16 +2,19 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background: url('img/bg.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    
 }
 
+/* Adding a semi-transparent background to the main container for readability */
 .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.9); /* Light transparent background */
+    background: linear-gradient(135deg, #ffffff, #f8e8d6);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -25,6 +28,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Task Input Section */
 .task-input {
     display: flex;
     flex-direction: column;
@@ -53,6 +57,7 @@ h1 {
     background: #218838;
 }
 
+/* Task List */
 .task-container {
     margin-top: 20px;
     overflow-x: auto;

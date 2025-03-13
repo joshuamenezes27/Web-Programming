@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Conversion of Celsius to Fahrenheit and Vice Versa</h3>
+    <input type="text" name="" id="cel" placeholder="Temperature in Celsius" required><br>
+    <input type="text" name="" id="fah" placeholder="Temperature in Fahrenheit" required><br><br>
+    <button onclick="cal()">Calculate</button>
+    <script>
+       
+       
+       function cal(){
+        let c=parseFloat(document.getElementById("cel").value);
+        let f=parseFloat(document.getElementById("fah").value);
+            let celtofah=(c*1.8)+32
+            let fahtocel=(f-32)*0.5556;
+            alert("Fahrenheit:"+celtofah);
+            alert("Celsius:"+fahtocel);
+        }
+        
+        
+    </script>
+</body>
+</html>
